@@ -33,8 +33,8 @@ function _loadLogo() {
 export function buildTitledHeader({ title, subtitle = '', width }) {
   const PX = 32
   const TITLE_LH = 44
-  const TITLE_FONT = '700 36px "Young Serif", Georgia, serif'
-  const SUBTITLE_FONT = '400 13px "Space Mono", "JetBrains Mono", ui-monospace, monospace'
+  const TITLE_FONT = '700 36px "Geist", Georgia, serif'
+  const SUBTITLE_FONT = '400 13px "Geist Mono", "JetBrains Mono", ui-monospace, monospace'
 
   // Pre-measure title to size the header
   const measureCanvas = document.createElement('canvas')
@@ -100,9 +100,9 @@ async function _ensureFontsReady() {
     if (document.fonts?.ready) await document.fonts.ready
     if (document.fonts?.load) {
       await Promise.all([
-        document.fonts.load('700 42px "Young Serif"'),
-        document.fonts.load('700 24px "Space Mono"'),
-        document.fonts.load('400 13px "Space Mono"'),
+        document.fonts.load('700 42px "Geist"'),
+        document.fonts.load('700 24px "Geist Mono"'),
+        document.fonts.load('400 13px "Geist Mono"'),
       ])
     }
   } catch (_) {
@@ -214,7 +214,7 @@ export async function renderSvgToCanvas(svgEl, {
 
   // Big wordmark — "SIMULATED BY MIROSHARK"
   ctx.fillStyle = '#0A0A0A'
-  ctx.font = '700 24px "Space Mono", "JetBrains Mono", ui-monospace, monospace'
+  ctx.font = '700 24px "Geist Mono", "JetBrains Mono", ui-monospace, monospace'
   ctx.textBaseline = 'middle'
   ctx.textAlign = 'left'
   // Letter spacing ~2px, implemented manually because canvas lacks the CSS
@@ -230,7 +230,7 @@ export async function renderSvgToCanvas(svgEl, {
   // Fallback title in the footer (only if there's no dedicated header zone)
   if (!drawHeader && title) {
     ctx.fillStyle = 'rgba(10, 10, 10, 0.9)'
-    ctx.font = '700 13px "Space Mono", "JetBrains Mono", ui-monospace, monospace'
+    ctx.font = '700 13px "Geist Mono", "JetBrains Mono", ui-monospace, monospace'
     ctx.textAlign = 'center'
     const titleStr = title.length > 60 ? title.slice(0, 57) + '…' : title
     ctx.fillText(titleStr, width / 2, midY)
@@ -239,7 +239,7 @@ export async function renderSvgToCanvas(svgEl, {
   // Subtitle / provenance (right)
   if (subtitle) {
     ctx.fillStyle = 'rgba(10, 10, 10, 0.4)'
-    ctx.font = '400 12px "Space Mono", "JetBrains Mono", ui-monospace, monospace'
+    ctx.font = '400 12px "Geist Mono", "JetBrains Mono", ui-monospace, monospace'
     ctx.textAlign = 'right'
     const subStr = subtitle.length > 44 ? subtitle.slice(0, 41) + '…' : subtitle
     ctx.fillText(subStr, width - 24, midY)

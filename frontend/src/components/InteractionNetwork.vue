@@ -757,7 +757,7 @@ onBeforeUnmount(() => {
   text-align: center;
 }
 
-.net-error-state { color: #dc2626; }
+.net-error-state { color: #ef4444; }
 
 .net-hint {
   font-size: 11px;

@@ -104,12 +104,12 @@
               <line
                 :x1="ML" :y1="yS(pct)"
                 :x2="W - MR" :y2="yS(pct)"
-                stroke="rgba(10,10,10,0.06)" stroke-width="1"
+                stroke="rgba(244,241,255,0.06)" stroke-width="1"
               />
               <text
                 :x="ML - 5" :y="yS(pct) + 4"
-                fill="rgba(10,10,10,0.35)" font-size="9"
-                font-family="'Space Mono', monospace" text-anchor="end"
+                fill="rgba(244,241,255,0.35)" font-size="9"
+                font-family="'Geist Mono', monospace" text-anchor="end"
               >{{ pct }}%</text>
             </g>
 
@@ -117,7 +117,7 @@
             <line
               :x1="ML" :y1="yS(50)"
               :x2="W - MR" :y2="yS(50)"
-              stroke="rgba(10,10,10,0.18)" stroke-width="1"
+              stroke="rgba(244,241,255,0.18)" stroke-width="1"
               stroke-dasharray="2,3"
             />
 
@@ -125,7 +125,7 @@
             <path
               :d="originalPath"
               fill="none"
-              stroke="rgba(10,10,10,0.35)"
+              stroke="rgba(244,241,255,0.35)"
               stroke-width="1.5"
               stroke-dasharray="5,3"
             />
@@ -143,7 +143,7 @@
               v-if="origEnd"
               :cx="origEnd.x" :cy="origEnd.y"
               r="3"
-              fill="rgba(10,10,10,0.35)"
+              fill="rgba(244,241,255,0.35)"
             />
             <circle
               v-if="cfEnd"
@@ -158,13 +158,13 @@
               <line
                 :x1="xS(origData.consensus_round)" :y1="MT"
                 :x2="xS(origData.consensus_round)" :y2="H - MB"
-                stroke="rgba(10,10,10,0.3)" stroke-width="1"
+                stroke="rgba(244,241,255,0.3)" stroke-width="1"
                 stroke-dasharray="3,3"
               />
               <text
                 :x="xS(origData.consensus_round) + 4" :y="MT + 10"
-                fill="rgba(10,10,10,0.45)" font-size="9"
-                font-family="'Space Mono', monospace"
+                fill="rgba(244,241,255,0.45)" font-size="9"
+                font-family="'Geist Mono', monospace"
               >{{ $tr('orig r', '原 r') }}{{ origData.consensus_round }}</text>
             </g>
             <g v-if="cfData?.consensus_round != null && cfData.consensus_round !== origData?.consensus_round">
@@ -177,7 +177,7 @@
               <text
                 :x="xS(cfData.consensus_round) + 4" :y="MT + 22"
                 fill="#c4b5fd" font-size="9"
-                font-family="'Space Mono', monospace"
+                font-family="'Geist Mono', monospace"
               >{{ $tr('cf r', '反 r') }}{{ cfData.consensus_round }}</text>
             </g>
 
@@ -186,13 +186,13 @@
               v-for="r in xTicks"
               :key="'xt' + r"
               :x="xS(r)" :y="H - MB + 13"
-              fill="rgba(10,10,10,0.35)" font-size="9"
-              font-family="'Space Mono', monospace" text-anchor="middle"
+              fill="rgba(244,241,255,0.35)" font-size="9"
+              font-family="'Geist Mono', monospace" text-anchor="middle"
             >{{ r }}</text>
             <text
               :x="ML + (W - ML - MR) / 2" :y="H - 2"
-              fill="rgba(10,10,10,0.3)" font-size="9"
-              font-family="'Space Mono', monospace" text-anchor="middle"
+              fill="rgba(244,241,255,0.3)" font-size="9"
+              font-family="'Geist Mono', monospace" text-anchor="middle"
             >{{ $tr('Round — bullish %', '轮次 — 看涨 %') }}</text>
           </svg>
 
@@ -534,7 +534,7 @@ onBeforeUnmount(() => {
   justify-content: space-between;
   align-items: center;
   padding: 12px 16px;
-  border-bottom: 1px solid rgba(10,10,10,0.08);
+  border-bottom: 1px solid rgba(244,241,255,0.08);
   flex-shrink: 0;
 }
 
@@ -566,7 +566,7 @@ onBeforeUnmount(() => {
 /* ── Export button — mirrors .export-btn ── */
 .wi-export-btn {
   background: none;
-  border: 1px solid rgba(10,10,10,0.15);
+  border: 1px solid rgba(244,241,255,0.15);
   color: rgba(244, 241, 255,0.5);
   padding: 4px 10px;
   font-family: var(--font-mono);
@@ -586,7 +586,7 @@ onBeforeUnmount(() => {
   font-size: 11px;
   line-height: 1.5;
   color: rgba(244, 241, 255,0.5);
-  border-bottom: 1px solid rgba(10,10,10,0.05);
+  border-bottom: 1px solid rgba(244,241,255,0.05);
   letter-spacing: 0.3px;
 }
 
@@ -619,7 +619,7 @@ onBeforeUnmount(() => {
 
 .wi-picker {
   padding: 12px 16px;
-  border-bottom: 1px solid rgba(10,10,10,0.05);
+  border-bottom: 1px solid rgba(244,241,255,0.05);
 }
 
 .wi-picker-header {
@@ -660,14 +660,14 @@ onBeforeUnmount(() => {
   align-items: center;
   gap: 8px;
   padding: 8px 10px;
-  border: 1px solid rgba(10,10,10,0.12);
+  border: 1px solid rgba(244,241,255,0.12);
   cursor: pointer;
   font-size: 11px;
   color: rgba(244, 241, 255,0.7);
   transition: background-color 0.12s, border-color 0.12s;
 }
 .wi-agent-card:hover:not(.disabled) {
-  background: rgba(10,10,10,0.02);
+  background: rgba(244,241,255,0.02);
   border-color: rgba(167, 139, 250, 0.35);
 }
 .wi-agent-card.selected {
@@ -709,9 +709,9 @@ onBeforeUnmount(() => {
 
 /* ── Recompute — primary CTA, matches .action-btn.primary (black filled) ── */
 .wi-recompute {
-  background: var(--color-black);
-  color: var(--color-white);
-  border: 2px solid var(--color-black);
+  background: linear-gradient(180deg, #6a4ad6 0%, #4922b8 45%, #2a118a 55%, #4f2dc4 100%);
+  color: #f8f5ff;
+  border: 1px solid rgba(167, 139, 250, 0.5);
   padding: 8px 16px;
   font-family: var(--font-mono);
   font-size: 11px;
@@ -721,9 +721,19 @@ onBeforeUnmount(() => {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  transition: opacity 0.15s ease;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    0 10px 24px -10px rgba(139, 92, 246, 0.55);
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
 }
-.wi-recompute:hover:not(:disabled) { opacity: 0.9; }
+.wi-recompute:hover:not(:disabled) {
+  transform: translateY(-1px);
+  background: linear-gradient(180deg, #7d5ee8 0%, #5728d4 45%, #3414a3 55%, #5e3bde 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    0 14px 30px -10px rgba(139, 92, 246, 0.7);
+}
 .wi-recompute:disabled {
   opacity: 0.3;
   cursor: not-allowed;
@@ -747,8 +757,8 @@ onBeforeUnmount(() => {
 }
 
 .wi-chart-wrap {
-  background: rgba(10,10,10,0.02);
-  border: 1px solid rgba(10,10,10,0.06);
+  background: rgba(244,241,255,0.02);
+  border: 1px solid rgba(244,241,255,0.06);
   padding: 10px 6px 4px;
 }
 
@@ -789,7 +799,7 @@ onBeforeUnmount(() => {
   flex-direction: column;
   gap: 8px;
   padding: 12px 14px;
-  border: 1px solid rgba(10,10,10,0.08);
+  border: 1px solid rgba(244,241,255,0.08);
   background: var(--color-white);
 }
 
@@ -859,7 +869,7 @@ onBeforeUnmount(() => {
 }
 .wi-impact-badge.impact-minimal {
   color: rgba(244, 241, 255,0.45);
-  background: rgba(10,10,10,0.04);
+  background: rgba(244,241,255,0.04);
   border-color: rgba(244, 241, 255,0.12);
 }
 
@@ -868,7 +878,7 @@ onBeforeUnmount(() => {
   line-height: 1.55;
   color: rgba(244, 241, 255,0.75);
   padding-top: 8px;
-  border-top: 1px solid rgba(10,10,10,0.06);
+  border-top: 1px solid rgba(244,241,255,0.06);
   letter-spacing: 0.2px;
 }
 

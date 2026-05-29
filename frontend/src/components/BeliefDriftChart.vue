@@ -452,7 +452,7 @@ onBeforeUnmount(() => {
   text-align: center;
 }
 
-.bd-error-state { color: #dc2626; }
+.bd-error-state { color: #ef4444; }
 
 .bd-hint {
   font-size: 11px;

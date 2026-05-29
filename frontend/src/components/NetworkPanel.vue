@@ -317,7 +317,7 @@ const renderGraph = () => {
     .attr('dx', d => radiusScale(d.actionCount) + 4)
     .attr('dy', 4)
     .style('pointer-events', 'none')
-    .style('font-family', "'Space Mono', 'Courier New', monospace")
+    .style('font-family', "'Geist Mono', 'Courier New', monospace")
 
   // Action overlay layer (on top of everything)
   actionLayer = g.append('g').attr('class', 'action-layer')
@@ -468,7 +468,7 @@ const showRoundActions = (roundNum) => {
         .attr('font-size', '8px')
         .attr('font-weight', '700')
         .attr('fill', color)
-        .style('font-family', "'Space Mono', monospace")
+        .style('font-family', "'Geist Mono', monospace")
         .style('pointer-events', 'none')
         .style('text-transform', 'uppercase')
         .style('letter-spacing', '0.5px')
@@ -481,7 +481,7 @@ const showRoundActions = (roundNum) => {
           .attr('y', 14 + (li + 1) * lineHeight)
           .attr('font-size', '10px')
           .attr('fill', 'rgba(250,250,250,0.8)')
-          .style('font-family', "'Space Mono', monospace")
+          .style('font-family', "'Geist Mono', monospace")
           .style('pointer-events', 'none')
       })
 

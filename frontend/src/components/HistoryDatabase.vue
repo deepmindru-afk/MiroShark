@@ -1289,14 +1289,19 @@ onUnmounted(() => {
 .project-card {
   position: absolute;
   width: 280px;
-  background: linear-gradient(180deg, rgba(40,30,70,0.65) 0%, rgba(18,12,38,0.85) 100%);
+  /* Opaque dark base under the violet sheen so stacked cards in the deck
+     fully occlude the ones behind them — without it the translucent
+     gradient let the back card's text bleed through (double-exposure). */
+  background-color: #0a0618;
+  background-image: linear-gradient(180deg, rgba(40,30,70,0.85) 0%, rgba(18,12,38,0.92) 100%);
   border: 1px solid rgba(167,139,250,0.18);
   border-radius: 12px;
   padding: 14px;
   cursor: pointer;
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,0.08),
-    inset 0 -1px 0 rgba(0,0,0,0.4);
+    inset 0 -1px 0 rgba(0,0,0,0.4),
+    0 18px 40px -20px rgba(0,0,0,0.85);
   transition: border-color 0.3s ease, transform 700ms cubic-bezier(0.23, 1, 0.32, 1), opacity 700ms cubic-bezier(0.23, 1, 0.32, 1), box-shadow 180ms ease;
 }
 
@@ -2021,7 +2026,7 @@ onUnmounted(() => {
   border-radius: 4px;
   cursor: pointer;
   font-size: 11px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   transition: all 0.15s;
   flex-shrink: 0;
 }
@@ -2036,7 +2041,7 @@ onUnmounted(() => {
   border-radius: 9999px;
   cursor: pointer;
   font-size: 11px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   transition: all 0.15s;
 }
 .compare-select-btn:hover { border-color: #a78bfa; color: #a78bfa; }
@@ -2365,7 +2370,7 @@ onUnmounted(() => {
 .resolve-outcome-btn.yes {
   border-color: rgba(34,197,94,0.5);
   background: rgba(34,197,94,0.06);
-  color: #16a34a;
+  color: #22c55e;
 }
 .resolve-outcome-btn.yes:hover:not(:disabled) {
   background: rgba(34,197,94,0.15);
@@ -2374,7 +2379,7 @@ onUnmounted(() => {
 .resolve-outcome-btn.no {
   border-color: rgba(239,68,68,0.5);
   background: rgba(239,68,68,0.06);
-  color: #dc2626;
+  color: #ef4444;
 }
 .resolve-outcome-btn.no:hover:not(:disabled) {
   background: rgba(239,68,68,0.15);
@@ -2428,12 +2433,12 @@ onUnmounted(() => {
 }
 .resolve-value { font-family: var(--font-mono); font-size: 12px; font-weight: 600; }
 .outcome-badge { padding: 2px 8px; border: 1px solid currentColor; }
-.outcome-badge.yes { color: #16a34a; background: rgba(34,197,94,0.08); border-color: rgba(34,197,94,0.4); }
-.outcome-badge.no  { color: #dc2626; background: rgba(239,68,68,0.08); border-color: rgba(239,68,68,0.4); }
+.outcome-badge.yes { color: #22c55e; background: rgba(34,197,94,0.08); border-color: rgba(34,197,94,0.4); }
+.outcome-badge.no  { color: #ef4444; background: rgba(239,68,68,0.08); border-color: rgba(239,68,68,0.4); }
 .resolve-confidence { font-size: 10px; font-weight: 400; margin-left: 4px; opacity: 0.7; }
 .accuracy-value { font-size: 12px; }
-.accuracy-value.correct { color: #16a34a; }
-.accuracy-value.wrong   { color: #dc2626; }
+.accuracy-value.correct { color: #22c55e; }
+.accuracy-value.wrong   { color: #ef4444; }
 .accuracy-value.split   { color: #a78bfa; }
 .resolve-notes {
   font-size: 11px;
