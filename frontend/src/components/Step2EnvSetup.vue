@@ -1628,7 +1628,7 @@ onUnmounted(() => {
   padding: 8px;
   background: transparent;
   border: 2px solid rgba(10,10,10,0.08);
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 2px;

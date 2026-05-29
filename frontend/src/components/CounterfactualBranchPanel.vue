@@ -397,13 +397,20 @@ onMounted(() => {
 }
 
 .cf-submit {
-  background: var(--color-black);
-  color: var(--color-white);
-  border-color: var(--color-black);
+  background: linear-gradient(180deg, #6a4ad6 0%, #4922b8 45%, #2a118a 55%, #4f2dc4 100%);
+  color: #f8f5ff;
+  border-color: rgba(167, 139, 250, 0.5);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    0 10px 24px -10px rgba(139, 92, 246, 0.55);
 }
 
 .cf-submit:hover:not(:disabled) {
-  opacity: 0.9;
+  background: linear-gradient(180deg, #7d5ee8 0%, #5728d4 45%, #3414a3 55%, #5e3bde 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    0 14px 30px -10px rgba(139, 92, 246, 0.7);
 }
 
 .cf-submit:disabled,

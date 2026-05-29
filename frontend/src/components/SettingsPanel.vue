@@ -1146,7 +1146,7 @@ const saveSettings = async () => {
   border: 2px solid rgba(244, 241, 255,0.1);
   background: #1a0f3a;
   padding: 8px 11px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 13px;
   color: #f4f1ff;
   outline: none;
@@ -1162,7 +1162,7 @@ const saveSettings = async () => {
   border: 2px solid rgba(244, 241, 255,0.1);
   background: #1a0f3a;
   padding: 8px 11px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 13px;
   color: #f4f1ff;
   outline: none;
@@ -1184,7 +1184,7 @@ const saveSettings = async () => {
   border: 2px solid rgba(244, 241, 255,0.1);
   background: #1a0f3a;
   padding: 8px 12px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 14px;
   cursor: pointer;
   transition: all 0.1s;
@@ -1234,18 +1234,24 @@ const saveSettings = async () => {
 }
 
 .test-btn {
-  border: 2px solid rgba(244, 241, 255,0.12);
-  background: transparent;
-  padding: 8px 16px;
-  font-family: 'Space Mono', monospace;
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  background: linear-gradient(180deg, rgba(50, 38, 86, 0.5) 0%, rgba(18, 12, 38, 0.7) 100%);
+  color: rgba(244, 241, 255, 0.88);
+  padding: 9px 18px;
+  font-family: var(--font-mono);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: all 0.1s;
+  transition: border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
 }
-.test-btn:hover:not(:disabled) { border-color: #a78bfa; color: #a78bfa; }
+.test-btn:hover:not(:disabled) {
+  border-color: rgba(167, 139, 250, 0.7);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px -12px rgba(139, 92, 246, 0.6);
+}
 .test-btn:disabled { opacity: 0.35; cursor: not-allowed; }
 
 .test-result {
@@ -1265,7 +1271,7 @@ const saveSettings = async () => {
   border: none;
   padding: 0 0 10px 0;
   cursor: pointer;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Geist Mono', monospace;
 }
 .chevron {
   font-size: 16px;
@@ -1325,7 +1331,7 @@ const saveSettings = async () => {
   border: 2px solid rgba(244, 241, 255,0.1);
   background: transparent;
   padding: 10px 20px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -1341,7 +1347,7 @@ const saveSettings = async () => {
   background: #f4f1ff;
   color: #110a26;
   padding: 10px 20px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -1361,7 +1367,7 @@ const saveSettings = async () => {
 }
 
 .webhook-test-result {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 11px;
   letter-spacing: 0.5px;
 }
@@ -1410,7 +1416,7 @@ const saveSettings = async () => {
   color: #110a26;
   border: none;
   padding: 6px 12px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 11px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -1467,7 +1473,7 @@ const saveSettings = async () => {
   border-bottom: 2px solid transparent;
   margin-bottom: -2px;
   padding: 8px 12px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 11px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -1501,7 +1507,7 @@ const saveSettings = async () => {
 }
 
 .ai-client-file-path {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   color: #f4f1ff;
   background: #110a26;
   padding: 1px 5px;
@@ -1517,7 +1523,7 @@ const saveSettings = async () => {
   color: #110a26;
   padding: 14px 16px;
   margin: 0;
-  font-family: 'Space Mono', 'Courier New', monospace;
+  font-family: 'Geist Mono', 'Courier New', monospace;
   font-size: 12px;
   line-height: 1.45;
   overflow-x: auto;
@@ -1538,7 +1544,7 @@ const saveSettings = async () => {
   color: #f4f1ff;
   border: 1px solid rgba(250,250,250,0.2);
   padding: 4px 10px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -1564,7 +1570,7 @@ const saveSettings = async () => {
   border: 2px dashed rgba(244, 241, 255,0.1);
   padding: 8px 12px;
   margin-top: 14px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 11px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -1601,7 +1607,7 @@ const saveSettings = async () => {
 .ai-tool-name {
   color: #a78bfa;
   font-weight: 700;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Geist Mono', monospace;
 }
 
 .ai-tool-desc {

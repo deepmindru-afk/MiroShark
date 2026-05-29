@@ -105,13 +105,13 @@
                   <line
                     :x1="ML" :y1="yScale(pct / 100)"
                     :x2="W - MR" :y2="yScale(pct / 100)"
-                    stroke="rgba(10,10,10,0.08)" stroke-width="1"
+                    stroke="rgba(244,241,255,0.08)" stroke-width="1"
                     :stroke-dasharray="pct === 50 ? '' : '2,3'"
                   />
                   <text
                     :x="W - MR + 8" :y="yScale(pct / 100) + 4"
-                    fill="rgba(10,10,10,0.45)" font-size="10"
-                    font-family="'Space Mono', ui-monospace, monospace"
+                    fill="rgba(244,241,255,0.45)" font-size="10"
+                    font-family="'Geist Mono', ui-monospace, monospace"
                   >{{ pct }}%</text>
                 </g>
 
@@ -151,7 +151,7 @@
                   <line
                     :x1="xScale(hoverPoint)" :y1="MT"
                     :x2="xScale(hoverPoint)" :y2="H - MB"
-                    stroke="rgba(10,10,10,0.25)" stroke-width="1" stroke-dasharray="2,3"
+                    stroke="rgba(244,241,255,0.25)" stroke-width="1" stroke-dasharray="2,3"
                   />
                   <circle
                     :cx="xScale(hoverPoint)"
@@ -408,7 +408,7 @@ const _buildExportCanvas = async () => {
 
   // ── Measure title height so the header sizes to its content ──
   // Fonts: Young Serif 44px for the title, Space Mono for everything else.
-  const titleFont = '700 44px "Young Serif", Georgia, serif'
+  const titleFont = '700 44px "Geist", Georgia, serif'
   const titleLineHeight = 54
   const measureCanvas = document.createElement('canvas')
   const measureCtx = measureCanvas.getContext('2d')
@@ -435,7 +435,7 @@ const _buildExportCanvas = async () => {
 
     // ── Big orange price ──
     ctx.fillStyle = priceColor
-    ctx.font = '700 56px "Space Mono", "JetBrains Mono", ui-monospace, monospace'
+    ctx.font = '700 56px "Geist Mono", "JetBrains Mono", ui-monospace, monospace'
     ctx.textBaseline = 'alphabetic'
     const priceBaseline = y + 46
     ctx.fillText(priceStr, PX, priceBaseline)
@@ -443,12 +443,12 @@ const _buildExportCanvas = async () => {
 
     // "CHANCE YES" label next to the price
     ctx.fillStyle = 'rgba(10, 10, 10, 0.5)'
-    ctx.font = '400 13px "Space Mono", "JetBrains Mono", ui-monospace, monospace'
+    ctx.font = '400 13px "Geist Mono", "JetBrains Mono", ui-monospace, monospace'
     ctx.fillText(`CHANCE ${outcomeLabel}`, PX + priceWidth + 18, priceBaseline - 4)
 
     // Delta pill, right-aligned to keep from colliding with the label
     if (deltaStr) {
-      ctx.font = '700 15px "Space Mono", "JetBrains Mono", ui-monospace, monospace'
+      ctx.font = '700 15px "Geist Mono", "JetBrains Mono", ui-monospace, monospace'
       const dw = ctx.measureText(deltaStr).width + 24
       const dh = 32
       const dx = W - PX - dw
@@ -471,13 +471,13 @@ const _buildExportCanvas = async () => {
       const cx = PX + i * colW
       // Label (uppercase small)
       ctx.fillStyle = 'rgba(10, 10, 10, 0.45)'
-      ctx.font = '700 10px "Space Mono", "JetBrains Mono", ui-monospace, monospace'
+      ctx.font = '700 10px "Geist Mono", "JetBrains Mono", ui-monospace, monospace'
       ctx.textAlign = 'left'
       ctx.textBaseline = 'top'
       ctx.fillText(s.k, cx, y)
       // Value
       ctx.fillStyle = '#f4f1ff'
-      ctx.font = '700 14px "Space Mono", "JetBrains Mono", ui-monospace, monospace'
+      ctx.font = '700 14px "Geist Mono", "JetBrains Mono", ui-monospace, monospace'
       ctx.fillText(s.v, cx, y + 16)
     })
   }
@@ -750,12 +750,12 @@ onBeforeUnmount(() => {
 
 .pm-market-resolved {
   margin-left: auto;
-  padding: 2px 6px;
-  background: var(--color-black);
-  color: var(--color-white);
+  padding: 2px 8px;
+  background: rgba(167, 139, 250, 0.18);
+  color: #cbb6ff;
   font-size: 9px;
   letter-spacing: 1px;
-  border-radius: 0;
+  border-radius: 9999px;
   text-transform: uppercase;
 }
 

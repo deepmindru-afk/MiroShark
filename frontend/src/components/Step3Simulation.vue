@@ -1975,7 +1975,7 @@ onUnmounted(() => {
 }
 
 .tooltip-title {
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 11px;
   font-weight: 600;
   color: rgba(244, 241, 255,0.4);
@@ -2011,7 +2011,7 @@ onUnmounted(() => {
 }
 
 .platform-name {
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 9px;
   font-weight: 700;
   color: #f4f1ff;
@@ -2040,7 +2040,7 @@ onUnmounted(() => {
 }
 
 .stat-label {
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 7px;
   color: rgba(244, 241, 255,0.4);
   font-weight: 600;
@@ -2049,14 +2049,14 @@ onUnmounted(() => {
 }
 
 .stat-value {
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 10px;
   font-weight: 600;
   color: rgba(244, 241, 255,0.7);
 }
 
 .stat-total, .stat-unit {
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 8px;
   color: rgba(244, 241, 255,0.4);
   font-weight: 400;
@@ -2215,20 +2215,20 @@ onUnmounted(() => {
 }
 
 .filter-name {
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 12px;
   font-weight: 600;
   color: rgba(244, 241, 255,0.7);
 }
 
 .filter-count {
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 10px;
   color: rgba(244, 241, 255,0.4);
 }
 
 .filter-clear {
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 10px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2286,7 +2286,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   gap: 16px;
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 11px;
   color: rgba(244, 241, 255,0.5);
   background: var(--color-gray, #1a0f3a);
@@ -2295,7 +2295,7 @@ onUnmounted(() => {
 }
 
 .total-count {
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-weight: 600;
   color: rgba(244, 241, 255,0.7);
   text-transform: uppercase;
@@ -2312,7 +2312,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   gap: 4px;
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
 }
 
 .breakdown-divider { color: rgba(244, 241, 255,0.2); }
@@ -2469,7 +2469,7 @@ onUnmounted(() => {
 }
 
 .agent-name {
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 13px;
   font-weight: 600;
   color: #f4f1ff;
@@ -2537,13 +2537,13 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 12px;
   flex-wrap: wrap;
 }
 
 .trade-direction {
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 10px;
   font-weight: 700;
   padding: 1px 6px;
@@ -2563,7 +2563,7 @@ onUnmounted(() => {
 }
 
 .market-ref {
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 10px;
   color: rgba(244, 241, 255,0.4);
   margin-top: 2px;
@@ -2608,7 +2608,7 @@ onUnmounted(() => {
 }
 
 .search-query {
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   background: rgba(10,10,10,0.06);
   padding: 0 4px;
 }
@@ -2619,7 +2619,7 @@ onUnmounted(() => {
   justify-content: flex-end;
   font-size: 10px;
   color: rgba(244, 241, 255,0.2);
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
 }
 
 /* Waiting State */
@@ -2633,7 +2633,7 @@ onUnmounted(() => {
   align-items: center;
   gap: 16px;
   color: rgba(244, 241, 255,0.2);
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -2736,7 +2736,7 @@ onUnmounted(() => {
 
 .log-time { color: rgba(196,181,253,0.5); min-width: 75px; }
 .log-msg { color: rgba(228,222,255,0.75); word-break: break-all; }
-.mono { font-family: var(--font-mono, 'Space Mono', monospace); }
+.mono { font-family: var(--font-mono, 'Geist Mono', monospace); }
 
 /* Loading spinner for button — adapts to whichever button hosts it. */
 .loading-spinner-small {
@@ -2791,7 +2791,7 @@ onUnmounted(() => {
 }
 
 .article-drawer-title {
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -2862,7 +2862,7 @@ onUnmounted(() => {
 .article-loading-label {
   text-align: center;
   color: rgba(244, 241, 255,0.35);
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 11px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -2908,7 +2908,7 @@ onUnmounted(() => {
 }
 
 .article-error-msg {
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 12px;
   color: #e53e3e;
   text-align: center;
@@ -2955,7 +2955,7 @@ onUnmounted(() => {
   margin-left: 4px;
   padding: 1px 6px;
   background: rgba(167, 139, 250, 0.18);
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 9px;
   letter-spacing: 1px;
   color: #a78bfa;
@@ -2969,7 +2969,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -2991,7 +2991,7 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   gap: 0;
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   background: var(--background, #110a26);
 }
 
@@ -3036,7 +3036,7 @@ onUnmounted(() => {
   border: 1px solid rgba(167,139,250,0.28);
   border-radius: 10px;
   background: linear-gradient(180deg, rgba(22,16,46,0.85) 0%, rgba(8,5,22,0.95) 100%);
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 12px;
   color: #f4f1ff;
   resize: none;
@@ -3075,7 +3075,7 @@ onUnmounted(() => {
   background: #a78bfa;
   border: none;
   color: #fff;
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 11px;
   letter-spacing: 1px;
   cursor: pointer;
@@ -3094,7 +3094,7 @@ onUnmounted(() => {
 .director-error {
   margin-top: 8px;
   font-size: 11px;
-  color: #dc2626;
+  color: #ef4444;
   letter-spacing: 0.5px;
 }
 
@@ -3224,7 +3224,7 @@ onUnmounted(() => {
 }
 
 .director-banner-text {
-  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 10px;
   color: #b45309;
   letter-spacing: 0.5px;

@@ -651,7 +651,7 @@ const downloadComparison = () => {
 }
 .metric-card.sim-a { border-top: 3px solid #a78bfa; }
 .metric-card.sim-b { border-top: 3px solid #c4b5fd; }
-.metric-sim-id { font-size: 11px; color: #555; margin-bottom: 12px; font-family: 'Space Mono', monospace; }
+.metric-sim-id { font-size: 11px; color: #555; margin-bottom: 12px; font-family: 'Geist Mono', monospace; }
 .metric-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 .metric-item { display: flex; flex-direction: column; gap: 4px; }
 .metric-val { font-size: 20px; color: #110a26; font-weight: bold; }
@@ -670,7 +670,7 @@ const downloadComparison = () => {
 .lb-col {}
 .lb-header {
   font-size: 11px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   margin-bottom: 8px;
   padding-bottom: 6px;
   border-bottom: 1px solid #2A2A2A;
@@ -711,7 +711,7 @@ const downloadComparison = () => {
 /* Markets */
 .markets-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .market-col { }
-.market-col-header { font-size: 11px; font-family: 'Space Mono', monospace; margin-bottom: 8px; }
+.market-col-header { font-size: 11px; font-family: 'Geist Mono', monospace; margin-bottom: 8px; }
 .market-row { display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 11px; }
 .market-id { color: #555; width: 60px; flex-shrink: 0; }
 .market-bar-wrap { flex: 1; height: 8px; background: #1A1A1A; border-radius: 4px; overflow: hidden; }

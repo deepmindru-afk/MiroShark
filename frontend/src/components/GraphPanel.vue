@@ -775,7 +775,7 @@ const renderGraph = () => {
     .attr('dominant-baseline', 'middle')
     .style('cursor', 'pointer')
     .style('pointer-events', 'all')
-    .style('font-family', "'Space Mono', 'Courier New', monospace")
+    .style('font-family', "'Geist Mono', 'Courier New', monospace")
     .style('display', showEdgeLabels.value ? 'block' : 'none')
     .on('click', (event, d) => {
       event.stopPropagation()
@@ -887,7 +887,7 @@ const renderGraph = () => {
     .attr('dy', 4)
     .attr('data-entity-type', d => d.type)
     .style('pointer-events', 'none')
-    .style('font-family', "'Space Mono', 'Courier New', monospace")
+    .style('font-family', "'Geist Mono', 'Courier New', monospace")
 
   simulation.on('tick', () => {
     // Update curve paths

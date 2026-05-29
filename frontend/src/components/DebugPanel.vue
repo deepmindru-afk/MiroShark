@@ -500,7 +500,7 @@ onUnmounted(() => {
   max-height: 70vh;
   background: #f4f1ff;
   color: #E0E0E0;
-  font-family: 'Space Mono', 'Courier New', monospace;
+  font-family: 'Geist Mono', 'Courier New', monospace;
   font-size: 11px;
   border-top: 3px solid var(--color-orange, #a78bfa);
   border-left: 3px solid var(--color-orange, #a78bfa);
