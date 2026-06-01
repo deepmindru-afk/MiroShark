@@ -39,6 +39,10 @@
 - Chat with any of them. Drop breaking news mid-run. Fork the timeline.
 - Get a report on what happened, citing actual posts and trades.
 
+<p align="center">
+  <img src="./docs/images/simulation-phases.png" alt="MiroShark pipeline: Phase 1 Ontology Generation → Phase 2 Graph Building → Phase 3 Agent Setup → Phase 4 Simulation Execution → Phase 5 Report & Interaction" width="100%" />
+</p>
+
 ### Quick start
 
 The recommended path: **one [OpenRouter](https://openrouter.ai/) key + the `./miroshark` launcher.** First simulation in ~10 min, ~$1.
@@ -85,6 +89,10 @@ After launching, click the **中 / EN** toggle in the top-right of the navbar to
 - **What-if history** — rewrite a historical event and see how a population of personas re-narrates the aftermath
 - **Creative experiments** — feed a novel with a lost ending; agents write a narratively consistent conclusion
 
+<p align="center">
+  <img src="./docs/images/agent-grounding.png" alt="Five layers of grounding per agent: demographic seed, web enrichment, semantic search, relationships, graph attributes" width="100%" />
+</p>
+
 ### Features
 
 A few of the highlights:
@@ -102,20 +110,9 @@ A few of the highlights:
 
 …and **40+ more** — share surfaces, exports, integrations, observability, and on-chain citation. See the **[full feature list and deep dives in docs/FEATURES.md](docs/FEATURES.md)**.
 
-### Diagrams
-
-<div align="center">
-<table>
-<tr>
-<td><img src="./docs/images/simulation-phases.png" alt="Diagram 1" width="100%"/></td>
-<td><img src="./docs/images/diagram2.jpg" alt="Diagram 2" width="100%"/></td>
-</tr>
-<tr>
-<td><img src="./docs/images/agent-grounding.png" alt="Five layers of grounding per agent: demographic seed, web enrichment, semantic search, relationships, graph attributes" width="100%"/></td>
-<td><img src="./docs/images/graph-memory-pipeline.png" alt="Graph memory pipeline: ingestion (NER, embed, entity resolution, contradiction check, temporal edges) and retrieval (vector + BM25 + BFS, fused, reranked)" width="100%"/></td>
-</tr>
-</table>
-</div>
+<p align="center">
+  <img src="./docs/images/graph-memory-pipeline.png" alt="Graph memory pipeline: ingestion (NER, embed, entity resolution, contradiction check, temporal edges) and retrieval (vector + BM25 + BFS, fused, reranked)" width="100%" />
+</p>
 
 ### Documentation
 
