@@ -20,6 +20,7 @@ These are the projects we know of that run MiroShark, extend it, or integrate wi
 | Blue Agent | [@blueagent_](https://x.com/blueagent_) · [blue-agent](https://github.com/madebyshun/blue-agent) |
 | Crucible Sim | [crucible-sim](https://github.com/wshuyi/crucible-sim) |
 | Echo Oracle | [@BuiltByEcho](https://x.com/BuiltByEcho) · [builtbyecho.xyz](https://www.builtbyecho.xyz/) |
+| HivemindOS | [website](https://hivemindos.liamvisionary.com) · [@thehivemindos](https://x.com/thehivemindos) · [repo](https://github.com/LiamVisionary/hivemindos) |
 | Monitor | [monitor-the-situation-bags](https://github.com/Zoidberg-eternal/monitor-the-situation-bags) |
 | Noelclaw | [@noelclawfun](https://x.com/noelclawfun) · [noelclaw.com](https://noelclaw.com) · [mcp](https://github.com/noelclaw/mcp) |
 | Nookplot | [nookplot.com](https://nookplot.com/?view=network) |
